@@ -29,6 +29,11 @@ class MenuWidget extends StatelessWidget {
             onTap: () => Navigator.pushReplacementNamed(context, 'homePageComponents'),
           ),
           ListTile(
+            leading: Icon(Icons.movie, color: Colors.blue,),
+            title: Text("Peliculas"),
+            onTap: () => Navigator.pushReplacementNamed(context, 'homePageMovies'),
+          ),
+          ListTile(
             leading: Icon(Icons.party_mode, color: Colors.blue,),
             title: Text("party_mode"),
             onTap: () {},

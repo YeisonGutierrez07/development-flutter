@@ -9,6 +9,8 @@ import 'package:presentacion_app/src/pages/componentes/input_page.dart';
 import 'package:presentacion_app/src/pages/componentes/listview_page.dart';
 import 'package:presentacion_app/src/pages/componentes/sliders_page.dart';
 import 'package:presentacion_app/src/pages/home_page.dart';
+import 'package:presentacion_app/src/pages/peliculas/home_pages.dart';
+import 'package:presentacion_app/src/pages/peliculas/peliculas_detail.dart';
 import 'package:presentacion_app/src/pages/settings_page.dart';
 
 Map <String, WidgetBuilder> getAplicationRoutes () {
@@ -27,5 +29,10 @@ Map <String, WidgetBuilder> getAplicationRoutes () {
     'sliders'             :( BuildContext context) =>SliderPage(),
     'list'                :( BuildContext context) =>ListViewPage(),    
     'animatedContainer'   :( BuildContext context) =>AnimationContainer(),
+
+    // Componentes de peliculas
+    'homePageMovies'      :( BuildContext context) => HomePageMovies(),
+    'detalle'             : (BuildContext context) => PeliculaDetail(),
+
   };
 }

@@ -8,6 +8,9 @@ import 'package:presentacion_app/src/pages/componentes/home_page.dart';
 import 'package:presentacion_app/src/pages/componentes/input_page.dart';
 import 'package:presentacion_app/src/pages/componentes/listview_page.dart';
 import 'package:presentacion_app/src/pages/componentes/sliders_page.dart';
+import 'package:presentacion_app/src/pages/dise%C3%B1os/basico_page.dart';
+import 'package:presentacion_app/src/pages/dise%C3%B1os/botones_pages.dart';
+import 'package:presentacion_app/src/pages/dise%C3%B1os/scroll_pages.dart';
 import 'package:presentacion_app/src/pages/home_page.dart';
 import 'package:presentacion_app/src/pages/peliculas/home_pages.dart';
 import 'package:presentacion_app/src/pages/peliculas/peliculas_detail.dart';
@@ -33,6 +36,11 @@ Map <String, WidgetBuilder> getAplicationRoutes () {
     // Componentes de peliculas
     'homePageMovies'      :( BuildContext context) => HomePageMovies(),
     'detalle'             : (BuildContext context) => PeliculaDetail(),
+
+    // Componentes de diseño 
+    'basico'              : (BuildContext context) => BasicoPage(),
+    'scroll'              : (BuildContext context) => ScrollPage(),
+    'botones'             : (BuildContext context) => BotonesPage()
 
   };
 }

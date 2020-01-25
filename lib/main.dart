@@ -13,6 +13,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'App Flutter',
       initialRoute: '/',
+      theme: ThemeData(
+        primaryColor: Colors.red
+      ),
       routes: getAplicationRoutes()
     );
   }

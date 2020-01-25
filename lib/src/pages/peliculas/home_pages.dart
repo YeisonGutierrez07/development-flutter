@@ -18,7 +18,6 @@ class HomePageMovies extends StatelessWidget {
       appBar: AppBar(
         centerTitle: false,
         title: Text('Peliculas en cine'),
-        backgroundColor: Colors.indigoAccent,
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.search),

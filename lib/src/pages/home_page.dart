@@ -10,22 +10,50 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
 
 
-    return Scaffold(
+    return Scaffold (
       appBar: AppBar(
-        title: Text("Preferencias"),
+        backgroundColor: Colors.red,
+        title: Text("Principal"),
       ),
       drawer: MenuWidget(),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+      body: Stack(
         children: <Widget>[
-          Text('Color secundario: '),
-          Divider(),
-          Text('Género: '),
-          Divider(),
-          Text('Nombre usuario'),
-          Divider(),
+          _imageFondo(),
+          SingleChildScrollView(
+            child: Column(
+              children: <Widget>[
+                _titulo()
+              ]
+            ),
+          )
         ],
+      )
+    );
+  }
+
+
+  Widget _imageFondo() {
+    return Container(
+      height: double.infinity,
+      width: double.infinity,
+      child: Image(
+        image: AssetImage('assets/flutter-logo.jpg'),
+        fit: BoxFit.cover,
       ),
     );
   }
+
+  Widget _titulo() {
+    return Container(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          Center(
+            child: Text("¡¡Creer Que Se Puede, Creer Que Lo Puedo Lograr!! \n \n Yeison G", style: TextStyle(color: Colors.white, fontSize: 60.0))
+          )
+        ]
+      )
+    );
+  }
+
 }

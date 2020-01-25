@@ -34,14 +34,19 @@ class MenuWidget extends StatelessWidget {
             onTap: () => Navigator.pushReplacementNamed(context, 'homePageMovies'),
           ),
           ListTile(
-            leading: Icon(Icons.party_mode, color: Colors.blue,),
-            title: Text("party_mode"),
-            onTap: () {},
+            leading: Icon(Icons.collections_bookmark, color: Colors.blue,),
+            title: Text("Diseño basico"),
+            onTap: () => Navigator.pushReplacementNamed(context, 'basico'),
           ),
           ListTile(
-            leading: Icon(Icons.people, color: Colors.blue,),
-            title: Text("people"),
-            onTap: () {},
+            leading: Icon(Icons.computer, color: Colors.blue,),
+            title: Text("Diseño Maquetado"),
+            onTap: () => Navigator.pushReplacementNamed(context, 'botones'),
+          ),
+          ListTile(
+            leading: Icon(Icons.add_to_home_screen, color: Colors.blue,),
+            title: Text("Diseño con scroll"),
+            onTap: () => Navigator.pushReplacementNamed(context, 'scroll'),
           ),
           ListTile(
             leading: Icon(Icons.settings, color: Colors.blue,),
